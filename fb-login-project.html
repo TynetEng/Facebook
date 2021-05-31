@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Facebook</title>
+
+    <style>
+        .x-main{
+            padding-top: 150px;
+        }
+        /* LEFT COL */
+        .x-h3{
+            font-weight: bold;
+        }
+        .x-p{
+            font-size: 28px;
+        }
+
+        /* RIGHT COL */
+        .x-card{
+            width: 400px;
+            margin: auto;
+            border: none;
+        }
+        .x-forgetten{
+            display: none;
+        }
+
+        /* MODAL */
+        .x-name{
+            margin-right: 10px;
+        }
+        .x-name2{
+            margin-left: 10px;
+        }
+        .x-opt span{
+            color: blue;
+        }
+        .x-modal{
+            width: 400px;
+        }
+
+        /* MEDIA */
+        @media (max-width:760px) {
+            .x-main{
+                padding-top: 0px;
+            }  
+            .x-modal{
+                width: 90%;
+            }
+            .x-p{
+                display: none;
+            } 
+            .x-h3{
+                text-align: center;
+                font-size: 25px;
+            }
+            .x-card{
+                background-color: #faf9fa;
+                border: none;
+                margin: auto;
+                width: 100%;
+                box-shadow: none !important;
+            }
+            .x-email, .x-password{
+                background-color: rgb(240, 238, 238);
+                font-size: 15px;
+            }
+            .x-log{
+                font-size: 15px;
+            }
+            .x-create{
+                font-size: 15px;
+            }
+            .x-forge{
+                display: none;
+            }
+            .x-forgetten{
+                display: inherit;
+                justify-content: center;
+                padding-top: 5px;
+            }
+        }
+
+    
+    </style>
+</head>
+<body class="bg-light">
+
+    <main class="container">
+
+        <main class="row x-main">
+            <!-- LEFT COL -->
+            <section class="col-sm pt-5">
+
+                <div>
+                    <h3 class="text-primary display-4 x-h3"> facebook</h3>
+                    <p class="x-p"> Facebook helps you to connect and share with the people in your life.</p>
+
+                </div>
+            </section>
+
+            <!-- RIGHT COL -->
+            <section class="col-sm">
+
+                <div>
+
+                    <div class="card card-body shadow-sm x-card">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-lg x-email" placeholder="Email or phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control form-control-lg x-password" placeholder="Password">
+                        </div>
+
+                        <div class="form-group">
+                            <a href="C:\Users\OLUWATOYIN\Desktop\SQI\HTML\Assignment\fb-home-project.html">
+                                <button class="btn btn-primary btn-lg w-100 x-log"> Log In </button>
+                            </a>
+                        </div>
+
+                        <div class="form-group text-center x-forge">
+                            <a href="#" class="card-link"> Forgotten Password?</a>
+                        </div>
+
+                        <hr>
+
+                        <div class="form=group text-center">
+                            <button class="btn btn-success btn-lg x-create " data-toggle="modal" data-target="#account"> Create New Account</button>
+                        </div>
+
+                        <div class="form-group text-center x-forgetten">
+                            <a href="#" class="card-link"> Forgotten Password?</a>
+                        </div>
+    
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </main>
+
+    <!-- ALL MODAL -->
+
+    <div>
+        <div class="modal" style="background-color: rgba(225, 225, 225, 0.8);" id="account">
+            <div class="modal-dialog x-modal">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title"> Sign Up</h4>
+                        <p class="modal-sub-title"> It's quick and easy.</p>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <div class="form-group d-flex ">
+                            <input type="text" class="form-control x-name" placeholder="First name">
+                            <input type="text" class="form-control x-name2" placeholder="Surname">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Mobile number or email address">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="New password">
+                        </div>
+
+                        <div class="form-group">
+                            <p> Date of Birth</p>
+                            <button class="btn btn-primary"> Sign Up </button>
+                        </div>
+
+                        <div class="form-group">
+                            <p> Gender</p>
+                            <button></button>
+                        </div>
+
+                        <div>
+                            <p style="font-size: 10px;" class="x-opt"> By clicking Sign Up, you agree to our <span>Terms</span>
+                                , <span> Data Policy</span> and <span> Cookie Policy</span>.
+                                You may receive SMS notifications from us and can opt out at any
+                                time. 
+                            </p>
+                        </div>
+
+                        <div class="form=group text-center">
+                            <button class="btn btn-success w-50" data-toggle="modal" data-target="#account"> Sign Up</button>
+                        </div>
+
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal footer">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
